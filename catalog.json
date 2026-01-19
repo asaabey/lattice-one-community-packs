@@ -89,7 +89,44 @@
         "path": "variables/core-labs-lipid"
       }
     ],
-    "screens": [],
+    "screens": [
+      {
+        "id": "patient-registration-lk",
+        "name": "Patient Registration - Sri Lanka",
+        "version": "1.0.0",
+        "category": "registration",
+        "description": "Patient registration screen for Sri Lanka healthcare facilities with NIC validation, district/province selection, and local address formats",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "registration", "demographics", "sri-lanka", "lk", "patient-intake"],
+        "dependsOn": ["core-demographics-lk"],
+        "path": "screens/patient-registration-lk"
+      },
+      {
+        "id": "patient-registration-au",
+        "name": "Patient Registration - Australia",
+        "version": "1.0.0",
+        "category": "registration",
+        "description": "Patient registration screen for Australian healthcare facilities with Medicare/DVA/IHI identifiers, state selection, and indigenous status",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "registration", "demographics", "australia", "au", "patient-intake", "medicare"],
+        "dependsOn": ["core-demographics-au"],
+        "path": "screens/patient-registration-au"
+      },
+      {
+        "id": "vital-signs-entry",
+        "name": "Vital Signs Entry",
+        "version": "1.0.0",
+        "category": "clinical",
+        "description": "Standard vital signs entry screen with blood pressure, heart rate, temperature, weight, height, BMI, SpO2, and respiratory rate",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "vitals", "clinical", "blood-pressure", "temperature", "weight", "height"],
+        "dependsOn": ["core-vitals"],
+        "path": "screens/vital-signs-entry"
+      }
+    ],
     "bundles": []
   }
 }

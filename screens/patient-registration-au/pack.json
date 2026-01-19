@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "patient-registration-au",
+  "name": "Patient Registration - Australia",
+  "version": "1.0.0",
+  "description": "Patient registration screen for Australian healthcare facilities with Medicare/DVA/IHI identifiers, state selection, and indigenous status",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "registration",
+  "tags": ["screen", "registration", "demographics", "australia", "au", "patient-intake", "medicare"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "screenCount": 1,
+  "screens": [
+    "patient-registration-au"
+  ],
+  "dependsOn": ["core-demographics-au"]
+}

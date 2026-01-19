@@ -1,0 +1,385 @@
+{
+  "resourceType": "Bundle",
+  "id": "vital-signs-entry-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:vital-signs-entry",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "vital-signs-entry",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/vital-signs-entry",
+        "version": "1.0.0",
+        "name": "VitalSignsEntry",
+        "title": "Vital Signs",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Standard vital signs entry form for clinical encounters",
+        "purpose": "Record patient vital signs during clinical assessment",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "clinical"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "activity"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "blood-pressure",
+            "text": "Blood Pressure",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "bp-systolic",
+                "text": "Systolic (mmHg)",
+                "type": "integer",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8480-6"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueInteger": 50
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueInteger": 300
+                  }
+                ]
+              },
+              {
+                "linkId": "bp-diastolic",
+                "text": "Diastolic (mmHg)",
+                "type": "integer",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8462-4"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueInteger": 20
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueInteger": 200
+                  }
+                ]
+              },
+              {
+                "linkId": "bp-position",
+                "text": "Position",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "sitting", "display": "Sitting"}},
+                  {"valueCoding": {"code": "standing", "display": "Standing"}},
+                  {"valueCoding": {"code": "supine", "display": "Lying down"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8361-8"
+                  }
+                ]
+              },
+              {
+                "linkId": "bp-arm",
+                "text": "Arm",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "left", "display": "Left"}},
+                  {"valueCoding": {"code": "right", "display": "Right"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-bp-arm"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "heart-rate-group",
+            "text": "Heart Rate",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "heart-rate",
+                "text": "Heart Rate (bpm)",
+                "type": "integer",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8867-4"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueInteger": 20
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueInteger": 300
+                  }
+                ]
+              },
+              {
+                "linkId": "pulse-regularity",
+                "text": "Pulse Regularity",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "regular", "display": "Regular"}},
+                  {"valueCoding": {"code": "irregular", "display": "Irregular"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-pulse-regularity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "respiratory-rate",
+            "text": "Respiratory Rate (breaths/min)",
+            "type": "integer",
+            "required": false,
+            "extension": [
+              {
+                "url": "https://lattice.one/fhir/ext/variable-id",
+                "valueString": "loinc-9279-1"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                "valueInteger": 4
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                "valueInteger": 60
+              }
+            ]
+          },
+          {
+            "linkId": "oxygen-saturation",
+            "text": "Oxygen Saturation (%)",
+            "type": "decimal",
+            "required": false,
+            "extension": [
+              {
+                "url": "https://lattice.one/fhir/ext/variable-id",
+                "valueString": "loinc-2708-6"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                "valueDecimal": 50
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                "valueDecimal": 100
+              }
+            ]
+          },
+          {
+            "linkId": "temperature-group",
+            "text": "Temperature",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "temperature-celsius",
+                "text": "Temperature (°C)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8310-5"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 30
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 45
+                  }
+                ]
+              },
+              {
+                "linkId": "temperature-fahrenheit",
+                "text": "Temperature (°F)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8331-1"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 86
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 113
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/unit-variant",
+                    "valueString": "imperial"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "anthropometrics",
+            "text": "Anthropometrics",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "weight-kg",
+                "text": "Weight (kg)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-29463-7"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0.5
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 500
+                  }
+                ]
+              },
+              {
+                "linkId": "weight-lbs",
+                "text": "Weight (lbs)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-3141-9"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 1100
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/unit-variant",
+                    "valueString": "imperial"
+                  }
+                ]
+              },
+              {
+                "linkId": "height-cm",
+                "text": "Height (cm)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8302-2"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 30
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 300
+                  }
+                ]
+              },
+              {
+                "linkId": "height-inches",
+                "text": "Height (inches)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-8306-3"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 12
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 120
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/unit-variant",
+                    "valueString": "imperial"
+                  }
+                ]
+              },
+              {
+                "linkId": "bmi",
+                "text": "BMI (kg/m²)",
+                "type": "decimal",
+                "required": false,
+                "readOnly": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-39156-5"
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculated",
+                    "valueBoolean": true
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculation-expression",
+                    "valueString": "weight_kg / (height_cm / 100)^2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "notes",
+            "text": "Clinical Notes",
+            "type": "text",
+            "required": false,
+            "extension": [
+              {
+                "url": "https://lattice.one/fhir/ext/variable-id",
+                "valueString": "local-vitals-notes"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

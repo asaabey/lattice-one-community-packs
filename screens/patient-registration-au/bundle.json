@@ -1,0 +1,387 @@
+{
+  "resourceType": "Bundle",
+  "id": "patient-registration-au-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-registration-au",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "patient-registration-au",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/patient-registration-au",
+        "version": "1.0.0",
+        "name": "PatientRegistrationAU",
+        "title": "Patient Registration - Australia",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Patient registration form for Australian healthcare facilities",
+        "purpose": "Collect patient demographic information for registration in Australian healthcare system",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "registration"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "user-plus"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "personal-info",
+            "text": "Personal Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "given-name",
+                "text": "Given Name(s)",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-given-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "family-name",
+                "text": "Family Name",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-family-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "date-of-birth",
+                "text": "Date of Birth",
+                "type": "date",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-date-of-birth"
+                  }
+                ]
+              },
+              {
+                "linkId": "gender",
+                "text": "Gender",
+                "type": "choice",
+                "required": true,
+                "answerOption": [
+                  {"valueCoding": {"code": "male", "display": "Male"}},
+                  {"valueCoding": {"code": "female", "display": "Female"}},
+                  {"valueCoding": {"code": "other", "display": "Other"}},
+                  {"valueCoding": {"code": "unknown", "display": "Prefer not to say"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-gender"
+                  }
+                ]
+              },
+              {
+                "linkId": "indigenous-status",
+                "text": "Indigenous Status",
+                "type": "choice",
+                "required": true,
+                "answerOption": [
+                  {"valueCoding": {"code": "1", "display": "Aboriginal but not Torres Strait Islander origin"}},
+                  {"valueCoding": {"code": "2", "display": "Torres Strait Islander but not Aboriginal origin"}},
+                  {"valueCoding": {"code": "3", "display": "Both Aboriginal and Torres Strait Islander origin"}},
+                  {"valueCoding": {"code": "4", "display": "Neither Aboriginal nor Torres Strait Islander origin"}},
+                  {"valueCoding": {"code": "9", "display": "Not stated/inadequately described"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-indigenous-status"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                      "coding": [{"code": "drop-down", "display": "Drop down"}]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "identifiers",
+            "text": "Healthcare Identifiers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "medicare-number",
+                "text": "Medicare Card Number",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-medicare-number"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^[0-9]{10}$"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "10 digit Medicare number"
+                  }
+                ]
+              },
+              {
+                "linkId": "medicare-irn",
+                "text": "Individual Reference Number (IRN)",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-medicare-irn"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^[1-9]$"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "1-9"
+                  }
+                ]
+              },
+              {
+                "linkId": "dva-number",
+                "text": "DVA File Number",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-dva-number"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "For veterans/dependants"
+                  }
+                ]
+              },
+              {
+                "linkId": "ihi",
+                "text": "Individual Healthcare Identifier (IHI)",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-ihi"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^800360[0-9]{10}$"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "16 digits starting with 800360"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "address",
+            "text": "Residential Address",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "address-line-1",
+                "text": "Address Line 1",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-address-line-1"
+                  }
+                ]
+              },
+              {
+                "linkId": "address-line-2",
+                "text": "Address Line 2",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-address-line-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "suburb",
+                "text": "Suburb/Town",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-suburb"
+                  }
+                ]
+              },
+              {
+                "linkId": "state",
+                "text": "State/Territory",
+                "type": "choice",
+                "required": true,
+                "answerOption": [
+                  {"valueCoding": {"code": "NSW", "display": "New South Wales"}},
+                  {"valueCoding": {"code": "VIC", "display": "Victoria"}},
+                  {"valueCoding": {"code": "QLD", "display": "Queensland"}},
+                  {"valueCoding": {"code": "SA", "display": "South Australia"}},
+                  {"valueCoding": {"code": "WA", "display": "Western Australia"}},
+                  {"valueCoding": {"code": "TAS", "display": "Tasmania"}},
+                  {"valueCoding": {"code": "NT", "display": "Northern Territory"}},
+                  {"valueCoding": {"code": "ACT", "display": "Australian Capital Territory"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-state"
+                  }
+                ]
+              },
+              {
+                "linkId": "postcode",
+                "text": "Postcode",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-postcode"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^[0-9]{4}$"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "contact",
+            "text": "Contact Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "phone-mobile",
+                "text": "Mobile Phone",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-phone-mobile"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^(\\+61|0)?4[0-9]{8}$"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "04XX XXX XXX"
+                  }
+                ]
+              },
+              {
+                "linkId": "phone-home",
+                "text": "Home Phone",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-phone-home"
+                  }
+                ]
+              },
+              {
+                "linkId": "email",
+                "text": "Email Address",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-email"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "emergency-contact",
+            "text": "Emergency Contact",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "emergency-name",
+                "text": "Emergency Contact Name",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-emergency-contact-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "emergency-relationship",
+                "text": "Relationship",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-emergency-contact-relationship"
+                  }
+                ]
+              },
+              {
+                "linkId": "emergency-phone",
+                "text": "Emergency Contact Phone",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-au-emergency-contact-phone"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

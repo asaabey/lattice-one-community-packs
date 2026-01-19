@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "vital-signs-entry",
+  "name": "Vital Signs Entry",
+  "version": "1.0.0",
+  "description": "Standard vital signs entry screen with blood pressure, heart rate, temperature, weight, height, BMI, SpO2, and respiratory rate",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "clinical",
+  "tags": ["screen", "vitals", "clinical", "blood-pressure", "temperature", "weight", "height"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "screenCount": 1,
+  "screens": [
+    "vital-signs-entry"
+  ],
+  "dependsOn": ["core-vitals"]
+}

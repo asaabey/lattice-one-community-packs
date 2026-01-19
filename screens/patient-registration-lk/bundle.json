@@ -1,0 +1,311 @@
+{
+  "resourceType": "Bundle",
+  "id": "patient-registration-lk-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-registration-lk",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "patient-registration-lk",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/patient-registration-lk",
+        "version": "1.0.0",
+        "name": "PatientRegistrationLK",
+        "title": "Patient Registration - Sri Lanka",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Patient registration form for Sri Lanka healthcare facilities",
+        "purpose": "Collect patient demographic information for registration in Sri Lankan healthcare system",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "registration"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "user-plus"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "personal-info",
+            "text": "Personal Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "given-name",
+                "text": "Given Name",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-given-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "family-name",
+                "text": "Family Name",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-family-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "date-of-birth",
+                "text": "Date of Birth",
+                "type": "date",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-date-of-birth"
+                  }
+                ]
+              },
+              {
+                "linkId": "gender",
+                "text": "Gender",
+                "type": "choice",
+                "required": true,
+                "answerOption": [
+                  {"valueCoding": {"code": "male", "display": "Male"}},
+                  {"valueCoding": {"code": "female", "display": "Female"}},
+                  {"valueCoding": {"code": "other", "display": "Other"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-gender"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "identifiers",
+            "text": "National Identifiers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "nic",
+                "text": "National Identity Card (NIC)",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-nic"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^([0-9]{9}[VvXx]|[0-9]{12})$"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "Old: 9 digits + V/X, New: 12 digits"
+                  }
+                ]
+              },
+              {
+                "linkId": "passport",
+                "text": "Passport Number (if applicable)",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-passport"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "address",
+            "text": "Address",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "address-line",
+                "text": "Street Address",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-address-line"
+                  }
+                ]
+              },
+              {
+                "linkId": "city",
+                "text": "City/Town",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-city"
+                  }
+                ]
+              },
+              {
+                "linkId": "gn-division",
+                "text": "Grama Niladhari Division",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-gn-division"
+                  }
+                ]
+              },
+              {
+                "linkId": "ds-division",
+                "text": "Divisional Secretariat",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-ds-division"
+                  }
+                ]
+              },
+              {
+                "linkId": "district",
+                "text": "District",
+                "type": "choice",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-district"
+                  }
+                ]
+              },
+              {
+                "linkId": "province",
+                "text": "Province",
+                "type": "choice",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-province"
+                  }
+                ]
+              },
+              {
+                "linkId": "postal-code",
+                "text": "Postal Code",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-postal-code"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "contact",
+            "text": "Contact Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "phone-mobile",
+                "text": "Mobile Phone",
+                "type": "string",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-phone-mobile"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/regex",
+                    "valueString": "^(\\+94|0)?[0-9]{9,10}$"
+                  }
+                ]
+              },
+              {
+                "linkId": "phone-landline",
+                "text": "Landline Phone",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-phone-landline"
+                  }
+                ]
+              },
+              {
+                "linkId": "email",
+                "text": "Email Address",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-email"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "emergency-contact",
+            "text": "Emergency Contact",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "emergency-name",
+                "text": "Emergency Contact Name",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-emergency-contact-name"
+                  }
+                ]
+              },
+              {
+                "linkId": "emergency-phone",
+                "text": "Emergency Contact Phone",
+                "type": "string",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "local-lk-emergency-contact-phone"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
