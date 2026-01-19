@@ -1,0 +1,674 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack"]
+  },
+  "identifier": {
+    "system": "https://lattice.one/fhir/variable-pack",
+    "value": "core-labs-renal-v1.0.0"
+  },
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2160-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2160-0",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2160-0" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Serum Creatinine" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Creatinine level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 2 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.1,\"max\":30,\"normalLow\":0.7,\"normalHigh\":1.3,\"criticalHigh\":10}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-48642-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-48642-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "48642-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "eGFR (Non-Black)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Estimated Glomerular Filtration Rate by CKD-EPI formula (non-African American)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "CKD-EPI 2021 equation without race coefficient" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mL/min/{1.73_m2}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":200,\"normalLow\":90,\"criticalLow\":15}" },
+          { "url": "https://lattice.one/fhir/ext/variable-calculated-from", "valueString": "CKD-EPI 2021" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "loinc-2160-0" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-48643-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-48643-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "48643-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "eGFR (Black)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Estimated Glomerular Filtration Rate by CKD-EPI formula (African American) - DEPRECATED" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Note: Race-based eGFR adjustment is no longer recommended (2021)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mL/min/{1.73_m2}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":200,\"normalLow\":90,\"criticalLow\":15}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-62238-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-62238-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "62238-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "eGFR (CKD-EPI Creatinine)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Estimated GFR by CKD-EPI creatinine equation (2021, race-free)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Recommended race-free eGFR calculation" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mL/min/{1.73_m2}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":200,\"normalLow\":90,\"criticalLow\":15}" },
+          { "url": "https://lattice.one/fhir/ext/variable-calculated-from", "valueString": "CKD-EPI 2021 race-free" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "loinc-2160-0" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-3094-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-3094-0",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "3094-0" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "BUN (Blood Urea Nitrogen)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Urea nitrogen level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":200,\"normalLow\":7,\"normalHigh\":20,\"criticalHigh\":100}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-6299-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-6299-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "6299-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "BUN/Creatinine Ratio" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Ratio of BUN to Creatinine" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Normal: 10-20:1. High ratio may indicate dehydration or GI bleeding" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "{ratio}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":100,\"normalLow\":10,\"normalHigh\":20}" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "loinc-3094-0,loinc-2160-0" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-82810-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-82810-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "82810-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Cystatin C" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Cystatin C level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Alternative marker for kidney function, less affected by muscle mass" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 2 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.1,\"max\":10,\"normalLow\":0.62,\"normalHigh\":1.15}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2951-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2951-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2951-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Sodium" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sodium level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmol/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":100,\"max\":180,\"normalLow\":136,\"normalHigh\":145,\"criticalLow\":120,\"criticalHigh\":160}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2823-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2823-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2823-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Potassium" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Potassium level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmol/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1.5,\"max\":10,\"normalLow\":3.5,\"normalHigh\":5.0,\"criticalLow\":2.5,\"criticalHigh\":6.5}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2075-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2075-0",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2075-0" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Chloride" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Chloride level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmol/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":70,\"max\":130,\"normalLow\":98,\"normalHigh\":106,\"criticalLow\":80,\"criticalHigh\":120}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-1963-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1963-8",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "1963-8" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Bicarbonate (CO2)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Carbon dioxide / Bicarbonate level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmol/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":5,\"max\":50,\"normalLow\":22,\"normalHigh\":29,\"criticalLow\":10,\"criticalHigh\":40}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-17861-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-17861-6",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "17861-6" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Calcium (Total)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Total calcium level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":4,\"max\":18,\"normalLow\":8.5,\"normalHigh\":10.5,\"criticalLow\":6.0,\"criticalHigh\":14.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2777-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2777-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2777-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Phosphorus" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Phosphorus level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":15,\"normalLow\":2.5,\"normalHigh\":4.5,\"criticalHigh\":9.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2601-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2601-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2601-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Magnesium" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Magnesium level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":6,\"normalLow\":1.7,\"normalHigh\":2.2,\"criticalLow\":1.0,\"criticalHigh\":4.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-1751-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1751-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "1751-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Albumin (Serum)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Albumin level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "g/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":7,\"normalLow\":3.5,\"normalHigh\":5.0,\"criticalLow\":1.5}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-1920-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1920-8",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "1920-8" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "AST (SGOT)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Aspartate aminotransferase level in serum or plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "U/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":2000,\"normalLow\":10,\"normalHigh\":40,\"criticalHigh\":500}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2965-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2965-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2965-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Specific Gravity (Urine)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Urine specific gravity" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "{ratio}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 3 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1.001,\"max\":1.040,\"normalLow\":1.005,\"normalHigh\":1.030}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-14959-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-14959-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "14959-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Albumin/Creatinine Ratio (UACR)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Albumin to creatinine ratio in urine" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Key marker for diabetic nephropathy. Normal <30, Microalbuminuria 30-300, Macroalbuminuria >300" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/g" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":10000,\"normalHigh\":30}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-13705-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-13705-9",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "13705-9" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Albumin (24hr)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Albumin excretion in 24-hour urine collection" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/24.h" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":10000,\"normalHigh\":30}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-9318-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-9318-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "9318-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Albumin (Random)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Albumin concentration in random urine specimen" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":500}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-32294-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-32294-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "32294-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Protein/Creatinine Ratio (UPCR)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Protein to creatinine ratio in urine" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Alternative to 24-hour urine protein. Normal <150 mg/g" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/g" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":20000,\"normalHigh\":150}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-14958-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-14958-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "14958-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Microalbumin (Random)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Microalbumin concentration in random urine" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":5000,\"normalHigh\":20}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2889-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2889-4",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2889-4" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Protein (24hr)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Total protein in 24-hour urine collection" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/24.h" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":20000,\"normalHigh\":150}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-3097-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-3097-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "3097-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Urine Creatinine (Random)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Creatinine concentration in random urine" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":500}" }
+        ]
+      }
+    }
+  ]
+}

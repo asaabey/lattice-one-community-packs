@@ -39,6 +39,18 @@
         "tags": ["vitals", "blood-pressure", "heart-rate", "temperature", "weight", "height", "bmi", "spo2"],
         "dependsOn": [],
         "path": "variables/core-vitals"
+      },
+      {
+        "id": "core-labs-renal",
+        "name": "Renal Laboratory Panel",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Laboratory variables for renal function assessment including creatinine, eGFR, BUN, electrolytes, and urinalysis markers",
+        "author": "Lattice Health Foundation",
+        "variableCount": 24,
+        "tags": ["labs", "renal", "kidney", "ckd", "nephrology", "electrolytes", "egfr", "creatinine"],
+        "dependsOn": [],
+        "path": "variables/core-labs-renal"
       }
     ],
     "screens": [],
