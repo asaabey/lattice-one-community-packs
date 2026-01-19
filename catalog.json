@@ -1,9 +1,34 @@
 {
   "$schema": "./schemas/catalog.schema.json",
   "version": "1.0",
-  "lastUpdated": "2024-01-15T00:00:00Z",
+  "lastUpdated": "2024-01-19T00:00:00Z",
   "packs": {
-    "variables": [],
+    "variables": [
+      {
+        "id": "core-demographics-lk",
+        "name": "Core Demographics - Sri Lanka",
+        "version": "1.0.0",
+        "category": "demographics",
+        "description": "Patient demographic variables for Sri Lanka including NIC, districts, provinces, and divisional secretariats",
+        "author": "Lattice Health Foundation",
+        "variableCount": 15,
+        "tags": ["demographics", "sri-lanka", "lk", "nic", "patient"],
+        "dependsOn": [],
+        "path": "variables/core-demographics-lk"
+      },
+      {
+        "id": "core-demographics-au",
+        "name": "Core Demographics - Australia",
+        "version": "1.0.0",
+        "category": "demographics",
+        "description": "Patient demographic variables for Australia including Medicare Card Number, states/territories, and Australian address formats",
+        "author": "Lattice Health Foundation",
+        "variableCount": 16,
+        "tags": ["demographics", "australia", "au", "medicare", "patient"],
+        "dependsOn": [],
+        "path": "variables/core-demographics-au"
+      }
+    ],
     "screens": [],
     "bundles": []
   }

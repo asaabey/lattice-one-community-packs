@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "core-demographics-au",
+  "name": "Core Demographics - Australia",
+  "version": "1.0.0",
+  "description": "Patient demographic variables for Australia including Medicare Card Number, states/territories, and Australian address formats",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "demographics",
+  "tags": ["demographics", "australia", "au", "medicare", "patient"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "variableCount": 16,
+  "variables": [
+    "local-au-medicare-number",
+    "local-au-medicare-irn",
+    "local-au-dva-number",
+    "local-au-ihi",
+    "local-patient-given-name",
+    "local-patient-family-name",
+    "local-patient-dob",
+    "local-patient-gender",
+    "local-au-state",
+    "local-au-postcode",
+    "local-au-suburb",
+    "local-patient-address-line",
+    "local-patient-phone-mobile",
+    "local-patient-phone-home",
+    "local-patient-email",
+    "local-au-indigenous-status"
+  ],
+  "dependsOn": []
+}

@@ -1,0 +1,384 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack"]
+  },
+  "identifier": {
+    "system": "https://lattice.one/fhir/variable-pack",
+    "value": "core-demographics-lk-v1.0.0"
+  },
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-nic",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-nic",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-nic" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "NIC Number" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sri Lanka National Identity Card number (old or new format)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Enter NIC in old format (9 digits + V/X) or new format (12 digits)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true,\"pattern\":\"^([0-9]{9}[VvXx]|[0-9]{12})$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-nic-old",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-nic-old",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-nic-old" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "NIC Number (Old Format)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sri Lanka NIC in old format: 9 digits followed by V or X" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: 123456789V or 123456789X" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[0-9]{9}[VvXx]$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-nic-new",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-nic-new",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-nic-new" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "NIC Number (New Format)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sri Lanka NIC in new format: 12 digits" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: 200012345678 (12 digits)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[0-9]{12}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-given-name",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-given-name",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-given-name" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Given Name" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's given name (first name)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-family-name",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-family-name",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-family-name" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Family Name" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's family name (surname)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-dob",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-dob",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-dob" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Date of Birth" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's date of birth" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "date" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-gender",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-gender",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's administrative gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"male\",\"display\":\"Male\"},{\"code\":\"female\",\"display\":\"Female\"},{\"code\":\"other\",\"display\":\"Other\"},{\"code\":\"unknown\",\"display\":\"Unknown\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-province",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-province",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-province" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Province" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sri Lanka administrative province" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"central\",\"display\":\"Central Province\"},{\"code\":\"eastern\",\"display\":\"Eastern Province\"},{\"code\":\"north-central\",\"display\":\"North Central Province\"},{\"code\":\"northern\",\"display\":\"Northern Province\"},{\"code\":\"north-western\",\"display\":\"North Western Province\"},{\"code\":\"sabaragamuwa\",\"display\":\"Sabaragamuwa Province\"},{\"code\":\"southern\",\"display\":\"Southern Province\"},{\"code\":\"uva\",\"display\":\"Uva Province\"},{\"code\":\"western\",\"display\":\"Western Province\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-district",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-district",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-district" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "District" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Sri Lanka administrative district" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Select the district of residence" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "local-lk-province" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"ampara\",\"display\":\"Ampara\"},{\"code\":\"anuradhapura\",\"display\":\"Anuradhapura\"},{\"code\":\"badulla\",\"display\":\"Badulla\"},{\"code\":\"batticaloa\",\"display\":\"Batticaloa\"},{\"code\":\"colombo\",\"display\":\"Colombo\"},{\"code\":\"galle\",\"display\":\"Galle\"},{\"code\":\"gampaha\",\"display\":\"Gampaha\"},{\"code\":\"hambantota\",\"display\":\"Hambantota\"},{\"code\":\"jaffna\",\"display\":\"Jaffna\"},{\"code\":\"kalutara\",\"display\":\"Kalutara\"},{\"code\":\"kandy\",\"display\":\"Kandy\"},{\"code\":\"kegalle\",\"display\":\"Kegalle\"},{\"code\":\"kilinochchi\",\"display\":\"Kilinochchi\"},{\"code\":\"kurunegala\",\"display\":\"Kurunegala\"},{\"code\":\"mannar\",\"display\":\"Mannar\"},{\"code\":\"matale\",\"display\":\"Matale\"},{\"code\":\"matara\",\"display\":\"Matara\"},{\"code\":\"monaragala\",\"display\":\"Monaragala\"},{\"code\":\"mullaitivu\",\"display\":\"Mullaitivu\"},{\"code\":\"nuwara-eliya\",\"display\":\"Nuwara Eliya\"},{\"code\":\"polonnaruwa\",\"display\":\"Polonnaruwa\"},{\"code\":\"puttalam\",\"display\":\"Puttalam\"},{\"code\":\"ratnapura\",\"display\":\"Ratnapura\"},{\"code\":\"trincomalee\",\"display\":\"Trincomalee\"},{\"code\":\"vavuniya\",\"display\":\"Vavuniya\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-ds-division",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-ds-division",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-ds-division" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "DS Division" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Divisional Secretariat Division" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Select your Divisional Secretariat (DS) division" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "local-lk-district" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-lk-gn-division",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-lk-gn-division",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "lk-gn-division" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "GN Division" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Grama Niladhari Division" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Enter your Grama Niladhari (GN) division name or number" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "local-lk-ds-division" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-address-line",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-address-line",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-address-line" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Address" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Street address line" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "House number, street name, village" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-phone-mobile",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-phone-mobile",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-phone-mobile" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Mobile Phone" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's mobile phone number" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: 07X XXXXXXX" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^(\\\\+94|0)?7[0-9]{8}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-phone-home",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-phone-home",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-phone-home" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Home Phone" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's home/landline phone number" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: 0XX XXXXXXX" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^(\\\\+94|0)?[1-9][0-9]{8}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-email",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-email",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-email" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Email Address" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's email address" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$\"}" }
+        ]
+      }
+    }
+  ]
+}

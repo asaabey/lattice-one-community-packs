@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "core-demographics-lk",
+  "name": "Core Demographics - Sri Lanka",
+  "version": "1.0.0",
+  "description": "Patient demographic variables for Sri Lanka including NIC, districts, provinces, and divisional secretariats",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "demographics",
+  "tags": ["demographics", "sri-lanka", "lk", "nic", "patient"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "variableCount": 15,
+  "variables": [
+    "local-lk-nic",
+    "local-lk-nic-old",
+    "local-lk-nic-new",
+    "local-patient-given-name",
+    "local-patient-family-name",
+    "local-patient-dob",
+    "local-patient-gender",
+    "local-lk-province",
+    "local-lk-district",
+    "local-lk-ds-division",
+    "local-lk-gn-division",
+    "local-patient-address-line",
+    "local-patient-phone-mobile",
+    "local-patient-phone-home",
+    "local-patient-email"
+  ],
+  "dependsOn": []
+}

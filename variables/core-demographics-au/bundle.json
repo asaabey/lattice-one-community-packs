@@ -1,0 +1,405 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack"]
+  },
+  "identifier": {
+    "system": "https://lattice.one/fhir/variable-pack",
+    "value": "core-demographics-au-v1.0.0"
+  },
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:variable-local-au-medicare-number",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-medicare-number",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-medicare-number" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Medicare Card Number" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Australian Medicare Card Number (10 digits)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Enter the 10-digit Medicare number from your Medicare card" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true,\"pattern\":\"^[2-6][0-9]{9}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-medicare-irn",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-medicare-irn",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-medicare-irn" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Medicare IRN" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Individual Reference Number (position on Medicare card, 1-9)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "The number next to your name on the Medicare card (1-9)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[1-9]$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-dva-number",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-dva-number",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-dva-number" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "DVA File Number" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Department of Veterans' Affairs file number" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Enter your DVA file number if applicable" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-ihi",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-ihi",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-ihi" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Individual Healthcare Identifier (IHI)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "16-digit Individual Healthcare Identifier" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Your unique 16-digit healthcare identifier" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^800360[0-9]{10}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-given-name",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-given-name",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-given-name" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Given Name" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's given name (first name)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-family-name",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-family-name",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-family-name" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Family Name" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's family name (surname)" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-dob",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-dob",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-dob" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Date of Birth" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's date of birth" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "date" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-gender",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-gender",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's administrative gender" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"required\":true}" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"male\",\"display\":\"Male\"},{\"code\":\"female\",\"display\":\"Female\"},{\"code\":\"other\",\"display\":\"Other\"},{\"code\":\"unknown\",\"display\":\"Unknown\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-state",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-state",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-state" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "State/Territory" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Australian state or territory" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"NSW\",\"display\":\"New South Wales\"},{\"code\":\"VIC\",\"display\":\"Victoria\"},{\"code\":\"QLD\",\"display\":\"Queensland\"},{\"code\":\"SA\",\"display\":\"South Australia\"},{\"code\":\"WA\",\"display\":\"Western Australia\"},{\"code\":\"TAS\",\"display\":\"Tasmania\"},{\"code\":\"NT\",\"display\":\"Northern Territory\"},{\"code\":\"ACT\",\"display\":\"Australian Capital Territory\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-postcode",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-postcode",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-postcode" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Postcode" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Australian postcode (4 digits)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Enter your 4-digit postcode" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[0-9]{4}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-suburb",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-suburb",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-suburb" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Suburb/Town" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Suburb or town name" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-address-line",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-address-line",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-address-line" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Street Address" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Street address line" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Unit/apartment number, street number and name" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-phone-mobile",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-phone-mobile",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-phone-mobile" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Mobile Phone" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's mobile phone number" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: 04XX XXX XXX" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^(\\\\+61|0)?4[0-9]{8}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-phone-home",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-phone-home",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-phone-home" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Home Phone" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's home/landline phone number" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Format: (0X) XXXX XXXX" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^(\\\\+61|0)?[2-9][0-9]{8}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-patient-email",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-patient-email",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "patient-email" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Email Address" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient's email address" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"pattern\":\"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$\"}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-au-indigenous-status",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-au-indigenous-status",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "au-indigenous-status" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Indigenous Status" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Aboriginal and Torres Strait Islander status (Australian Standard)" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Are you of Aboriginal or Torres Strait Islander origin?" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "demographics" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Patient" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"1\",\"display\":\"Aboriginal but not Torres Strait Islander origin\"},{\"code\":\"2\",\"display\":\"Torres Strait Islander but not Aboriginal origin\"},{\"code\":\"3\",\"display\":\"Both Aboriginal and Torres Strait Islander origin\"},{\"code\":\"4\",\"display\":\"Neither Aboriginal nor Torres Strait Islander origin\"},{\"code\":\"9\",\"display\":\"Not stated/inadequately described\"}]" }
+        ]
+      }
+    }
+  ]
+}
