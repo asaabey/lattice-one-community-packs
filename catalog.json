@@ -63,6 +63,18 @@
         "tags": ["labs", "hematology", "cbc", "hemoglobin", "anemia", "coagulation", "iron"],
         "dependsOn": [],
         "path": "variables/core-labs-hematology"
+      },
+      {
+        "id": "core-labs-liver",
+        "name": "Liver Laboratory Panel",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Liver function tests including hepatocellular enzymes, cholestatic markers, synthetic function, and bilirubin fractions",
+        "author": "Lattice Health Foundation",
+        "variableCount": 18,
+        "tags": ["labs", "liver", "hepatology", "lfts", "bilirubin", "enzymes", "hepatitis"],
+        "dependsOn": [],
+        "path": "variables/core-labs-liver"
       }
     ],
     "screens": [],

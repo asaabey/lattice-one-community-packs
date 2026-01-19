@@ -1,0 +1,1005 @@
+{
+  "resourceType": "Bundle",
+  "id": "core-labs-liver-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:loinc-1920-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1920-8",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1920-8"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "AST (SGOT)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Aspartate aminotransferase - hepatocellular enzyme marker"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":10000,\"normalLow\":10,\"normalHigh\":40,\"criticalHigh\":1000}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "hepatocellular-enzymes"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1742-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1742-6",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1742-6"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "ALT (SGPT)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Alanine aminotransferase - more liver-specific than AST"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":10000,\"normalLow\":7,\"normalHigh\":56,\"criticalHigh\":1000}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "hepatocellular-enzymes"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-6768-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-6768-6",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "6768-6"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Alkaline Phosphatase (ALP)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Cholestatic marker - elevated in biliary obstruction and bone disease"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":5000,\"normalLow\":44,\"normalHigh\":147}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "cholestatic-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2324-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2324-2",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2324-2"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "GGT (Gamma-GT)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Gamma-glutamyl transferase - sensitive marker for biliary disease and alcohol use"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":5000,\"normalLow\":9,\"normalHigh\":48}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "cholestatic-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1975-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1975-2",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1975-2"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Total Bilirubin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Total bilirubin - sum of direct and indirect bilirubin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":50,\"normalLow\":0.1,\"normalHigh\":1.2,\"criticalHigh\":15}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "bilirubin"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1968-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1968-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1968-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Direct Bilirubin (Conjugated)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Conjugated bilirubin - elevated in hepatocellular disease and biliary obstruction"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":30,\"normalLow\":0,\"normalHigh\":0.3}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "bilirubin"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1971-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1971-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1971-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Indirect Bilirubin (Unconjugated)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Unconjugated bilirubin - elevated in hemolysis and Gilbert syndrome"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":30,\"normalLow\":0.1,\"normalHigh\":0.8}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "bilirubin"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1751-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1751-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1751-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Albumin (Serum)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Serum albumin - marker of hepatic synthetic function"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":10,\"normalLow\":3.5,\"normalHigh\":5.0,\"criticalLow\":1.5}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "synthetic-function"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2885-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2885-2",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2885-2"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Total Protein (Serum)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Total serum protein - albumin plus globulins"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":15,\"normalLow\":6.0,\"normalHigh\":8.3}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "synthetic-function"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-10834-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-10834-0",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "10834-0"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Globulin (Serum)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Serum globulin - calculated from total protein minus albumin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "g/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":10,\"normalLow\":2.0,\"normalHigh\":3.5}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "synthetic-function"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1841-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1841-9",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1841-9"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Ammonia (Plasma)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Plasma ammonia - elevated in hepatic encephalopathy and liver failure"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "umol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "umol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":500,\"normalLow\":11,\"normalHigh\":32,\"criticalHigh\":100}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "metabolic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2532-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2532-0",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2532-0"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "LDH (Lactate Dehydrogenase)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Lactate dehydrogenase - non-specific marker of tissue damage"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":10000,\"normalLow\":140,\"normalHigh\":280}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "metabolic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1825-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1825-2",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1825-2"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "5'-Nucleotidase"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Liver-specific enzyme - helps differentiate hepatic vs bone ALP elevation"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "U/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":100,\"normalLow\":0,\"normalHigh\":17}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "cholestatic-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-5905-5",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-5905-5",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "5905-5"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Prothrombin Time (PT)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Prothrombin time - marker of hepatic synthetic function (coagulation factors)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "s"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "s"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":200,\"normalLow\":11,\"normalHigh\":13.5,\"criticalHigh\":50}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "synthetic-function"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-16935-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-16935-9",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "16935-9"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Hepatitis B Surface Antigen (HBsAg)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "HBsAg - indicates active or chronic hepatitis B infection"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "choice"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-choices",
+            "valueString": "[{\"code\":\"positive\",\"display\":\"Positive\"},{\"code\":\"negative\",\"display\":\"Negative\"}]"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "viral-serology"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-5196-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-5196-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "5196-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Hepatitis B Surface Antibody (Anti-HBs)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Anti-HBs - indicates immunity from vaccination or resolved infection"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "choice"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-choices",
+            "valueString": "[{\"code\":\"positive\",\"display\":\"Positive (Immune)\"},{\"code\":\"negative\",\"display\":\"Negative (Non-immune)\"}]"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "viral-serology"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-5195-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-5195-3",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "5195-3"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Hepatitis C Antibody (Anti-HCV)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Anti-HCV - screening test for hepatitis C exposure"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "choice"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-choices",
+            "valueString": "[{\"code\":\"positive\",\"display\":\"Positive (Reactive)\"},{\"code\":\"negative\",\"display\":\"Negative (Non-reactive)\"}]"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "viral-serology"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-22664-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-22664-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "22664-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Hepatitis A IgM Antibody"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "HAV IgM - indicates acute hepatitis A infection"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "choice"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-choices",
+            "valueString": "[{\"code\":\"positive\",\"display\":\"Positive (Acute infection)\"},{\"code\":\"negative\",\"display\":\"Negative\"}]"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "viral-serology"
+          }
+        ]
+      }
+    }
+  ]
+}
