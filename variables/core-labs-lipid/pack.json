@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "core-labs-lipid",
+  "name": "Lipid Laboratory Panel",
+  "version": "1.0.0",
+  "description": "Complete lipid panel including standard lipid profile, calculated ratios, apolipoproteins, and advanced lipid markers",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "labs",
+  "tags": ["labs", "lipid", "cholesterol", "cardiovascular", "ldl", "hdl", "triglycerides"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "variableCount": 16,
+  "variables": [
+    "loinc-2093-3",
+    "loinc-2085-9",
+    "loinc-2089-1",
+    "loinc-18262-6",
+    "loinc-2571-8",
+    "loinc-2091-7",
+    "loinc-43396-1",
+    "loinc-9830-1",
+    "loinc-11054-4",
+    "loinc-13457-7",
+    "loinc-1869-0",
+    "loinc-1884-9",
+    "loinc-10835-7",
+    "loinc-49132-4",
+    "loinc-96259-7",
+    "loinc-35198-1"
+  ],
+  "dependsOn": []
+}

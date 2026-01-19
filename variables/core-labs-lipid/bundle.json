@@ -1,0 +1,923 @@
+{
+  "resourceType": "Bundle",
+  "id": "core-labs-lipid-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:loinc-2093-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2093-3",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2093-3"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Total Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Total cholesterol - sum of HDL, LDL, and VLDL cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":50,\"max\":600,\"normalHigh\":200,\"borderlineHigh\":239}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2085-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2085-9",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2085-9"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "HDL Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "High-density lipoprotein cholesterol - protective 'good' cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":10,\"max\":150,\"normalLow\":40,\"optimalLow\":60}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2089-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2089-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2089-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "LDL Cholesterol (Calculated)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Low-density lipoprotein cholesterol calculated via Friedewald equation (inaccurate if TG >400)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":20,\"max\":400,\"optimalHigh\":100,\"nearOptimalHigh\":129,\"borderlineHigh\":159,\"high\":189}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-18262-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-18262-6",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "18262-6"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "LDL Cholesterol (Direct)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Low-density lipoprotein cholesterol measured directly - more accurate when TG elevated"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":20,\"max\":400,\"optimalHigh\":100,\"nearOptimalHigh\":129,\"borderlineHigh\":159,\"high\":189}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2571-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2571-8",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2571-8"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Triglycerides"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Serum triglycerides - requires fasting for accurate measurement"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":20,\"max\":5000,\"normalHigh\":150,\"borderlineHigh\":199,\"high\":499,\"criticalHigh\":500}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-2091-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2091-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "2091-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "VLDL Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Very low-density lipoprotein cholesterol - typically calculated as TG/5"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":2,\"max\":200,\"normalLow\":5,\"normalHigh\":40}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "standard-lipid-panel"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-43396-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-43396-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "43396-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Non-HDL Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Non-HDL cholesterol (Total - HDL) - secondary target in lipid management"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":30,\"max\":500,\"optimalHigh\":130,\"borderlineHigh\":159,\"high\":189}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "calculated-ratios"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-9830-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-9830-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "9830-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Total/HDL Cholesterol Ratio"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Total cholesterol to HDL ratio - cardiovascular risk indicator"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":1,\"max\":20,\"optimalHigh\":3.5,\"borderlineHigh\":5.0}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "calculated-ratios"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-11054-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-11054-4",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "11054-4"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "LDL/HDL Cholesterol Ratio"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "LDL to HDL ratio - atherogenic index indicator"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0.5,\"max\":15,\"optimalHigh\":2.5,\"borderlineHigh\":3.5}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "calculated-ratios"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-13457-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-13457-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "13457-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Triglyceride/HDL Ratio"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "TG/HDL ratio - marker of insulin resistance and small dense LDL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "{ratio}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0.5,\"max\":30,\"optimalHigh\":2.0,\"borderlineHigh\":4.0}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "calculated-ratios"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1869-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1869-0",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1869-0"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Apolipoprotein A-I"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Apo A-I - major protein component of HDL, cardioprotective"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":50,\"max\":300,\"normalLow\":120,\"normalHigh\":180}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "apolipoproteins"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-1884-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1884-9",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "1884-9"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Apolipoprotein B"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Apo B - represents total atherogenic particle count (LDL, VLDL, IDL)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":30,\"max\":250,\"optimalHigh\":90,\"borderlineHigh\":120}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "apolipoproteins"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-10835-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-10835-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "10835-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Lipoprotein(a)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Lp(a) - independent cardiovascular risk factor, genetically determined"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "nmol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "nmol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":500,\"desirableHigh\":75,\"elevatedLow\":125}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "advanced-lipid-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-49132-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-49132-4",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "49132-4"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "LDL Particle Number"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "LDL-P - total LDL particle count by NMR, may be more predictive than LDL-C"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "nmol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "nmol/L"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":200,\"max\":3000,\"optimalHigh\":1000,\"borderlineHigh\":1299,\"high\":1599}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "advanced-lipid-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-96259-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-96259-7",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "96259-7"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Small Dense LDL Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "sdLDL-C - small dense LDL particles, more atherogenic than large buoyant LDL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":5,\"max\":150,\"optimalHigh\":25,\"borderlineHigh\":40}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "advanced-lipid-markers"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:loinc-35198-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-35198-1",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "35198-1"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://loinc.org"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Remnant Cholesterol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Remnant-like particle cholesterol - atherogenic triglyceride-rich remnants"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "quantity"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-ucum-unit",
+            "valueString": "mg/dL"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-validation",
+            "valueString": "{\"min\":0,\"max\":100,\"desirableHigh\":24}"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "advanced-lipid-markers"
+          }
+        ]
+      }
+    }
+  ]
+}

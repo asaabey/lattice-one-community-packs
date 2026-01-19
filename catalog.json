@@ -75,6 +75,18 @@
         "tags": ["labs", "liver", "hepatology", "lfts", "bilirubin", "enzymes", "hepatitis"],
         "dependsOn": [],
         "path": "variables/core-labs-liver"
+      },
+      {
+        "id": "core-labs-lipid",
+        "name": "Lipid Laboratory Panel",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Complete lipid panel including standard lipid profile, calculated ratios, apolipoproteins, and advanced lipid markers",
+        "author": "Lattice Health Foundation",
+        "variableCount": 16,
+        "tags": ["labs", "lipid", "cholesterol", "cardiovascular", "ldl", "hdl", "triglycerides"],
+        "dependsOn": [],
+        "path": "variables/core-labs-lipid"
       }
     ],
     "screens": [],
