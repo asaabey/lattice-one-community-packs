@@ -1,0 +1,10 @@
+{
+  "$schema": "./schemas/catalog.schema.json",
+  "version": "1.0",
+  "lastUpdated": "2024-01-15T00:00:00Z",
+  "packs": {
+    "variables": [],
+    "screens": [],
+    "bundles": []
+  }
+}

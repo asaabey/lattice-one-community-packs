@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lattice.one/schemas/pack-metadata.schema.json",
+  "title": "Lattice Pack Metadata",
+  "description": "Schema for pack.json metadata files",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "description",
+    "author",
+    "license",
+    "category",
+    "fhirVersion"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Unique pack identifier (lowercase, alphanumeric, hyphens)"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "description": "Human-readable pack name"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (MAJOR.MINOR.PATCH)"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500,
+      "description": "Clear description of pack contents and purpose"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name or organization"
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC-BY-4.0", "CC-BY-SA-4.0", "MIT", "Apache-2.0", "proprietary"],
+      "description": "License identifier"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["demographics", "vitals", "labs", "clinical", "dialysis", "transplant", "admin", "custom"],
+      "description": "Primary category for the pack"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "description": "Searchable tags"
+    },
+    "latticeMinVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Minimum required Lattice One version"
+    },
+    "fhirVersion": {
+      "type": "string",
+      "enum": ["R4", "R5"],
+      "description": "FHIR version"
+    },
+    "variableCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of variables in the pack"
+    },
+    "screenCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of screens in the pack"
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of canonical variable IDs in this pack"
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of screen slugs in this pack"
+    },
+    "dependsOn": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["packId"],
+        "properties": {
+          "packId": {
+            "type": "string",
+            "description": "Required pack ID"
+          },
+          "minVersion": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$",
+            "description": "Minimum required version"
+          }
+        }
+      },
+      "description": "Pack dependencies"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source repository URL"
+    },
+    "documentation": {
+      "type": "string",
+      "format": "uri",
+      "description": "Documentation URL"
+    }
+  }
+}

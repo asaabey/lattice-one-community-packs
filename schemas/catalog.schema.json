@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lattice.one/schemas/catalog.schema.json",
+  "title": "Lattice Pack Catalog",
+  "description": "Schema for the master catalog.json index",
+  "type": "object",
+  "required": ["version", "lastUpdated", "packs"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "description": "Catalog schema version"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last update timestamp"
+    },
+    "packs": {
+      "type": "object",
+      "required": ["variables", "screens", "bundles"],
+      "properties": {
+        "variables": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/packEntry"
+          },
+          "description": "Variable pack entries"
+        },
+        "screens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/packEntry"
+          },
+          "description": "Screen pack entries"
+        },
+        "bundles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/packEntry"
+          },
+          "description": "Bundle pack entries"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "packEntry": {
+      "type": "object",
+      "required": ["id", "name", "version", "category", "description"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "description": "Pack identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Current version"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["demographics", "vitals", "labs", "clinical", "dialysis", "transplant", "admin", "custom"],
+          "description": "Primary category"
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description"
+        },
+        "author": {
+          "type": "string",
+          "description": "Author or organization"
+        },
+        "variableCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of variables"
+        },
+        "screenCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of screens"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Searchable tags"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Required pack IDs"
+        },
+        "path": {
+          "type": "string",
+          "description": "Relative path to pack directory"
+        }
+      }
+    }
+  }
+}
