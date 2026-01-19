@@ -1,0 +1,477 @@
+{
+  "resourceType": "Bundle",
+  "id": "lab-entry-hematology-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:lab-entry-hematology",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "lab-entry-hematology",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/lab-entry-hematology",
+        "version": "1.0.0",
+        "name": "LabEntryHematology",
+        "title": "Hematology Panel",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Laboratory result entry form for hematology panel",
+        "purpose": "Record hematology laboratory results including CBC, iron studies, and coagulation",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "labs"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "droplet"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "specimen-info",
+            "text": "Specimen Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "collection-date",
+                "text": "Collection Date",
+                "type": "dateTime",
+                "required": true
+              },
+              {
+                "linkId": "lab-id",
+                "text": "Lab Reference Number",
+                "type": "string",
+                "required": false
+              }
+            ]
+          },
+          {
+            "linkId": "cbc",
+            "text": "Complete Blood Count (CBC)",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "hemoglobin",
+                "text": "Hemoglobin (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-718-7"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 2
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 25
+                  }
+                ]
+              },
+              {
+                "linkId": "hematocrit",
+                "text": "Hematocrit (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-4544-3"
+                  }
+                ]
+              },
+              {
+                "linkId": "rbc",
+                "text": "RBC Count (10^6/uL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-789-8"
+                  }
+                ]
+              },
+              {
+                "linkId": "wbc",
+                "text": "WBC Count (10^3/uL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-6690-2"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0.1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 500
+                  }
+                ]
+              },
+              {
+                "linkId": "platelets",
+                "text": "Platelet Count (10^3/uL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-777-3"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 2000
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "rbc-indices",
+            "text": "Red Cell Indices",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "mcv",
+                "text": "MCV (fL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-787-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "mch",
+                "text": "MCH (pg)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-785-6"
+                  }
+                ]
+              },
+              {
+                "linkId": "mchc",
+                "text": "MCHC (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-786-4"
+                  }
+                ]
+              },
+              {
+                "linkId": "rdw",
+                "text": "RDW (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-788-0"
+                  }
+                ]
+              },
+              {
+                "linkId": "reticulocyte",
+                "text": "Reticulocyte Count (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-30384-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "wbc-differential",
+            "text": "WBC Differential",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "neutrophils",
+                "text": "Neutrophils (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-751-8"
+                  }
+                ]
+              },
+              {
+                "linkId": "lymphocytes",
+                "text": "Lymphocytes (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-731-0"
+                  }
+                ]
+              },
+              {
+                "linkId": "monocytes",
+                "text": "Monocytes (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-742-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "eosinophils",
+                "text": "Eosinophils (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-711-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "basophils",
+                "text": "Basophils (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-704-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "anc",
+                "text": "Absolute Neutrophil Count (10^3/uL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-17849-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "iron-studies",
+            "text": "Iron Studies",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "serum-iron",
+                "text": "Serum Iron (ug/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2500-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "tibc",
+                "text": "TIBC (ug/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-14800-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "transferrin-sat",
+                "text": "Transferrin Saturation (%)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2502-3"
+                  }
+                ]
+              },
+              {
+                "linkId": "ferritin",
+                "text": "Ferritin (ng/mL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-3173-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "vitamins",
+            "text": "Vitamins",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "vitamin-b12",
+                "text": "Vitamin B12 (pg/mL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-35572-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "folate",
+                "text": "Folate (ng/mL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-4537-7"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "coagulation",
+            "text": "Coagulation",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "pt",
+                "text": "PT (seconds)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-5902-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "inr",
+                "text": "INR",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-5964-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "ptt",
+                "text": "PTT (seconds)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-6301-6"
+                  }
+                ]
+              },
+              {
+                "linkId": "fibrinogen",
+                "text": "Fibrinogen (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-71695-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "inflammatory",
+            "text": "Inflammatory Markers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "esr",
+                "text": "ESR (mm/h)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-30341-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "crp",
+                "text": "CRP (mg/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1988-5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "notes",
+            "text": "Lab Notes",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    }
+  ]
+}

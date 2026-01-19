@@ -1,0 +1,363 @@
+{
+  "resourceType": "Bundle",
+  "id": "lab-entry-lipid-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:lab-entry-lipid",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "lab-entry-lipid",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/lab-entry-lipid",
+        "version": "1.0.0",
+        "name": "LabEntryLipid",
+        "title": "Lipid Panel",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Laboratory result entry form for lipid profile",
+        "purpose": "Record lipid panel laboratory results for cardiovascular risk assessment",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "labs"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "heart"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "specimen-info",
+            "text": "Specimen Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "collection-date",
+                "text": "Collection Date",
+                "type": "dateTime",
+                "required": true
+              },
+              {
+                "linkId": "fasting-status",
+                "text": "Fasting Status",
+                "type": "choice",
+                "required": true,
+                "answerOption": [
+                  {"valueCoding": {"code": "fasting", "display": "Fasting (9-12 hours)"}},
+                  {"valueCoding": {"code": "non-fasting", "display": "Non-fasting"}},
+                  {"valueCoding": {"code": "unknown", "display": "Unknown"}}
+                ]
+              },
+              {
+                "linkId": "lab-id",
+                "text": "Lab Reference Number",
+                "type": "string",
+                "required": false
+              }
+            ]
+          },
+          {
+            "linkId": "standard-lipid-panel",
+            "text": "Standard Lipid Panel",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "total-cholesterol",
+                "text": "Total Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2093-3"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 50
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 600
+                  }
+                ]
+              },
+              {
+                "linkId": "hdl",
+                "text": "HDL Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2085-9"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 10
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 150
+                  }
+                ]
+              },
+              {
+                "linkId": "ldl-calculated",
+                "text": "LDL Cholesterol - Calculated (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2089-1"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "Friedewald equation - inaccurate if TG >400"
+                  }
+                ]
+              },
+              {
+                "linkId": "ldl-direct",
+                "text": "LDL Cholesterol - Direct (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-18262-6"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "Use when TG elevated"
+                  }
+                ]
+              },
+              {
+                "linkId": "triglycerides",
+                "text": "Triglycerides (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2571-8"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 20
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 5000
+                  }
+                ]
+              },
+              {
+                "linkId": "vldl",
+                "text": "VLDL Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2091-7"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "calculated-ratios",
+            "text": "Calculated Values & Ratios",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "non-hdl",
+                "text": "Non-HDL Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-43396-1"
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculated",
+                    "valueBoolean": true
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculation-expression",
+                    "valueString": "total_cholesterol - hdl"
+                  }
+                ]
+              },
+              {
+                "linkId": "total-hdl-ratio",
+                "text": "Total/HDL Ratio",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-9830-1"
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculated",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "linkId": "ldl-hdl-ratio",
+                "text": "LDL/HDL Ratio",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-11054-4"
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculated",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "linkId": "tg-hdl-ratio",
+                "text": "TG/HDL Ratio",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-13457-7"
+                  },
+                  {
+                    "url": "https://lattice.one/fhir/ext/calculated",
+                    "valueBoolean": true
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": ">4 suggests insulin resistance"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "apolipoproteins",
+            "text": "Apolipoproteins",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "apo-a1",
+                "text": "Apolipoprotein A-I (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1869-0"
+                  }
+                ]
+              },
+              {
+                "linkId": "apo-b",
+                "text": "Apolipoprotein B (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1884-9"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "Reflects total atherogenic particle count"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "advanced-markers",
+            "text": "Advanced Lipid Markers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "lpa",
+                "text": "Lipoprotein(a) (nmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-10835-7"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+                    "valueString": "Genetically determined, independent CV risk factor"
+                  }
+                ]
+              },
+              {
+                "linkId": "ldl-p",
+                "text": "LDL Particle Number (nmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-49132-4"
+                  }
+                ]
+              },
+              {
+                "linkId": "sdldl",
+                "text": "Small Dense LDL Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-96259-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "remnant-cholesterol",
+                "text": "Remnant Cholesterol (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-35198-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "notes",
+            "text": "Lab Notes",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    }
+  ]
+}

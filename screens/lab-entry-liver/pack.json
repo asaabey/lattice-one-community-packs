@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "lab-entry-liver",
+  "name": "Liver Panel Entry",
+  "version": "1.0.0",
+  "description": "Laboratory result entry screen for liver function tests including enzymes, bilirubin, synthetic function, and hepatitis serology",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "labs",
+  "tags": ["screen", "labs", "liver", "hepatology", "lfts", "bilirubin", "hepatitis"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "screenCount": 1,
+  "screens": [
+    "lab-entry-liver"
+  ],
+  "dependsOn": ["core-labs-liver"]
+}

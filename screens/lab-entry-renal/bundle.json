@@ -1,0 +1,379 @@
+{
+  "resourceType": "Bundle",
+  "id": "lab-entry-renal-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:lab-entry-renal",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "lab-entry-renal",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/lab-entry-renal",
+        "version": "1.0.0",
+        "name": "LabEntryRenal",
+        "title": "Renal Function Panel",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Laboratory result entry form for renal function assessment",
+        "purpose": "Record renal function laboratory results",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "labs"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "flask"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "specimen-info",
+            "text": "Specimen Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "collection-date",
+                "text": "Collection Date",
+                "type": "dateTime",
+                "required": true
+              },
+              {
+                "linkId": "lab-id",
+                "text": "Lab Reference Number",
+                "type": "string",
+                "required": false
+              }
+            ]
+          },
+          {
+            "linkId": "kidney-function",
+            "text": "Kidney Function Markers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "creatinine",
+                "text": "Serum Creatinine (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2160-0"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0.1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 30
+                  }
+                ]
+              },
+              {
+                "linkId": "egfr",
+                "text": "eGFR CKD-EPI 2021 (mL/min/1.73m²)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-62238-1"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 150
+                  }
+                ]
+              },
+              {
+                "linkId": "bun",
+                "text": "BUN (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-3094-0"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 1
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 200
+                  }
+                ]
+              },
+              {
+                "linkId": "bun-creat-ratio",
+                "text": "BUN/Creatinine Ratio",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-6299-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "cystatin-c",
+                "text": "Cystatin C (mg/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-82810-3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "electrolytes",
+            "text": "Electrolytes",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "sodium",
+                "text": "Sodium (mmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2951-2"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 100
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 180
+                  }
+                ]
+              },
+              {
+                "linkId": "potassium",
+                "text": "Potassium (mmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2823-3"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 1.5
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 10
+                  }
+                ]
+              },
+              {
+                "linkId": "chloride",
+                "text": "Chloride (mmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2075-0"
+                  }
+                ]
+              },
+              {
+                "linkId": "bicarbonate",
+                "text": "Bicarbonate/CO2 (mmol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1963-8"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "minerals",
+            "text": "Minerals (CKD-MBD)",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "calcium",
+                "text": "Calcium Total (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-17861-6"
+                  }
+                ]
+              },
+              {
+                "linkId": "phosphorus",
+                "text": "Phosphorus (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2777-1"
+                  }
+                ]
+              },
+              {
+                "linkId": "magnesium",
+                "text": "Magnesium (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2601-3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "proteins",
+            "text": "Proteins",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "albumin",
+                "text": "Albumin Serum (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1751-7"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "urinalysis",
+            "text": "Urinalysis",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "urine-specific-gravity",
+                "text": "Urine Specific Gravity",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2965-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "uacr",
+                "text": "Urine Albumin/Creatinine Ratio (mg/g)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-14959-1"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 10000
+                  }
+                ]
+              },
+              {
+                "linkId": "upcr",
+                "text": "Urine Protein/Creatinine Ratio (mg/g)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-32294-1"
+                  }
+                ]
+              },
+              {
+                "linkId": "urine-albumin-random",
+                "text": "Urine Albumin Random (mg/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-9318-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "urine-microalbumin",
+                "text": "Urine Microalbumin Random (mg/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-14958-3"
+                  }
+                ]
+              },
+              {
+                "linkId": "urine-creatinine",
+                "text": "Urine Creatinine Random (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-3097-3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "notes",
+            "text": "Lab Notes",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    }
+  ]
+}

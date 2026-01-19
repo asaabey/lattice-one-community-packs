@@ -125,6 +125,54 @@
         "tags": ["screen", "vitals", "clinical", "blood-pressure", "temperature", "weight", "height"],
         "dependsOn": ["core-vitals"],
         "path": "screens/vital-signs-entry"
+      },
+      {
+        "id": "lab-entry-renal",
+        "name": "Renal Panel Entry",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Laboratory result entry screen for renal function tests including creatinine, eGFR, electrolytes, and urinalysis markers",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "labs", "renal", "kidney", "ckd", "egfr", "electrolytes", "urinalysis"],
+        "dependsOn": ["core-labs-renal"],
+        "path": "screens/lab-entry-renal"
+      },
+      {
+        "id": "lab-entry-hematology",
+        "name": "Hematology Panel Entry",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Laboratory result entry screen for hematology tests including CBC, iron studies, coagulation, and inflammatory markers",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "labs", "hematology", "cbc", "coagulation", "iron", "anemia"],
+        "dependsOn": ["core-labs-hematology"],
+        "path": "screens/lab-entry-hematology"
+      },
+      {
+        "id": "lab-entry-liver",
+        "name": "Liver Panel Entry",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Laboratory result entry screen for liver function tests including enzymes, bilirubin, synthetic function, and hepatitis serology",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "labs", "liver", "hepatology", "lfts", "bilirubin", "hepatitis"],
+        "dependsOn": ["core-labs-liver"],
+        "path": "screens/lab-entry-liver"
+      },
+      {
+        "id": "lab-entry-lipid",
+        "name": "Lipid Panel Entry",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Laboratory result entry screen for lipid profile including cholesterol, triglycerides, apolipoproteins, and advanced markers",
+        "author": "Lattice Health Foundation",
+        "screenCount": 1,
+        "tags": ["screen", "labs", "lipid", "cholesterol", "cardiovascular", "ldl", "hdl"],
+        "dependsOn": ["core-labs-lipid"],
+        "path": "screens/lab-entry-lipid"
       }
     ],
     "bundles": []

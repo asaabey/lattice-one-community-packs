@@ -1,0 +1,366 @@
+{
+  "resourceType": "Bundle",
+  "id": "lab-entry-liver-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/screen-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:lab-entry-liver",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "lab-entry-liver",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/lattice-screen"]
+        },
+        "url": "https://lattice.one/fhir/Questionnaire/lab-entry-liver",
+        "version": "1.0.0",
+        "name": "LabEntryLiver",
+        "title": "Liver Function Panel",
+        "status": "active",
+        "subjectType": ["Patient"],
+        "date": "2024-01-19",
+        "publisher": "Lattice Health Foundation",
+        "description": "Laboratory result entry form for liver function tests",
+        "purpose": "Record liver function laboratory results",
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/screen-category",
+            "valueString": "labs"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/screen-icon",
+            "valueString": "flask"
+          }
+        ],
+        "item": [
+          {
+            "linkId": "specimen-info",
+            "text": "Specimen Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "collection-date",
+                "text": "Collection Date",
+                "type": "dateTime",
+                "required": true
+              },
+              {
+                "linkId": "lab-id",
+                "text": "Lab Reference Number",
+                "type": "string",
+                "required": false
+              }
+            ]
+          },
+          {
+            "linkId": "hepatocellular-enzymes",
+            "text": "Hepatocellular Enzymes",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "ast",
+                "text": "AST/SGOT (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1920-8"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 10000
+                  }
+                ]
+              },
+              {
+                "linkId": "alt",
+                "text": "ALT/SGPT (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1742-6"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 10000
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "cholestatic-markers",
+            "text": "Cholestatic Markers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "alp",
+                "text": "Alkaline Phosphatase (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-6768-6"
+                  }
+                ]
+              },
+              {
+                "linkId": "ggt",
+                "text": "GGT/Gamma-GT (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2324-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "5-nucleotidase",
+                "text": "5'-Nucleotidase (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1825-2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "bilirubin",
+            "text": "Bilirubin",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "total-bilirubin",
+                "text": "Total Bilirubin (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1975-2"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                    "valueDecimal": 50
+                  }
+                ]
+              },
+              {
+                "linkId": "direct-bilirubin",
+                "text": "Direct/Conjugated Bilirubin (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1968-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "indirect-bilirubin",
+                "text": "Indirect/Unconjugated Bilirubin (mg/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1971-1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "synthetic-function",
+            "text": "Synthetic Function",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "albumin",
+                "text": "Albumin (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1751-7"
+                  }
+                ]
+              },
+              {
+                "linkId": "total-protein",
+                "text": "Total Protein (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2885-2"
+                  }
+                ]
+              },
+              {
+                "linkId": "globulin",
+                "text": "Globulin (g/dL)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-10834-0"
+                  }
+                ]
+              },
+              {
+                "linkId": "pt",
+                "text": "PT (seconds)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-5905-5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "metabolic",
+            "text": "Metabolic Markers",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "ammonia",
+                "text": "Ammonia (umol/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-1841-9"
+                  }
+                ]
+              },
+              {
+                "linkId": "ldh",
+                "text": "LDH (U/L)",
+                "type": "decimal",
+                "required": false,
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-2532-0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "viral-serology",
+            "text": "Viral Hepatitis Serology",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "hbsag",
+                "text": "Hepatitis B Surface Antigen (HBsAg)",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "positive", "display": "Positive"}},
+                  {"valueCoding": {"code": "negative", "display": "Negative"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-16935-9"
+                  }
+                ]
+              },
+              {
+                "linkId": "anti-hbs",
+                "text": "Hepatitis B Surface Antibody (Anti-HBs)",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "positive", "display": "Positive (Immune)"}},
+                  {"valueCoding": {"code": "negative", "display": "Negative (Non-immune)"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-5196-1"
+                  }
+                ]
+              },
+              {
+                "linkId": "anti-hcv",
+                "text": "Hepatitis C Antibody (Anti-HCV)",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "positive", "display": "Positive (Reactive)"}},
+                  {"valueCoding": {"code": "negative", "display": "Negative (Non-reactive)"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-5195-3"
+                  }
+                ]
+              },
+              {
+                "linkId": "hav-igm",
+                "text": "Hepatitis A IgM Antibody",
+                "type": "choice",
+                "required": false,
+                "answerOption": [
+                  {"valueCoding": {"code": "positive", "display": "Positive (Acute infection)"}},
+                  {"valueCoding": {"code": "negative", "display": "Negative"}}
+                ],
+                "extension": [
+                  {
+                    "url": "https://lattice.one/fhir/ext/variable-id",
+                    "valueString": "loinc-22664-7"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "notes",
+            "text": "Lab Notes",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    }
+  ]
+}
