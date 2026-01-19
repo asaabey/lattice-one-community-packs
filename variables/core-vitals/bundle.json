@@ -1,0 +1,483 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack"]
+  },
+  "identifier": {
+    "system": "https://lattice.one/fhir/variable-pack",
+    "value": "core-vitals-v1.0.0"
+  },
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8480-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8480-6",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8480-6" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Systolic Blood Pressure" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Systolic blood pressure measurement" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmHg" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":60,\"max\":300,\"normalLow\":90,\"normalHigh\":120,\"criticalLow\":70,\"criticalHigh\":180}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8462-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8462-4",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8462-4" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Diastolic Blood Pressure" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Diastolic blood pressure measurement" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mmHg" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":30,\"max\":200,\"normalLow\":60,\"normalHigh\":80,\"criticalLow\":40,\"criticalHigh\":120}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8867-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8867-4",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8867-4" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Heart Rate" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Heart rate / pulse rate" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "/min" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":20,\"max\":250,\"normalLow\":60,\"normalHigh\":100,\"criticalLow\":40,\"criticalHigh\":150}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-9279-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-9279-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "9279-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Respiratory Rate" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Respiratory rate / breathing rate" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "/min" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":4,\"max\":60,\"normalLow\":12,\"normalHigh\":20,\"criticalLow\":8,\"criticalHigh\":30}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8310-5",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8310-5",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8310-5" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Temperature (Celsius)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body temperature in degrees Celsius" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Normal range: 36.1-37.2°C" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "Cel" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":30,\"max\":45,\"normalLow\":36.1,\"normalHigh\":37.2,\"criticalLow\":35,\"criticalHigh\":40}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8331-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8331-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8331-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Temperature (Fahrenheit)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body temperature in degrees Fahrenheit" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Normal range: 97.0-99.0°F" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "[degF]" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":86,\"max\":113,\"normalLow\":97.0,\"normalHigh\":99.0,\"criticalLow\":95,\"criticalHigh\":104}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-29463-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-29463-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "29463-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Weight (kg)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body weight in kilograms" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "kg" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":500}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-3141-9",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-3141-9",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "3141-9" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Weight (lbs)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body weight in pounds" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "[lb_av]" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":1100}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8302-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8302-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8302-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Height (cm)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body height in centimeters" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "cm" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":20,\"max\":300}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-8306-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-8306-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "8306-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Height (in)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body height in inches" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "[in_i]" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":8,\"max\":120}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-39156-5",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-39156-5",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "39156-5" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Body Mass Index (BMI)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Body mass index calculated as weight/height²" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Normal: 18.5-24.9, Overweight: 25-29.9, Obese: ≥30" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "kg/m2" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":10,\"max\":100,\"normalLow\":18.5,\"normalHigh\":24.9}" },
+          { "url": "https://lattice.one/fhir/ext/variable-calculated-from", "valueString": "weight_kg / (height_m * height_m)" },
+          { "url": "https://lattice.one/fhir/ext/variable-depends-on", "valueString": "loinc-29463-7,loinc-8302-2" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2708-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2708-6",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2708-6" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Oxygen Saturation (SpO2)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Oxygen saturation in arterial blood by pulse oximetry" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":50,\"max\":100,\"normalLow\":95,\"normalHigh\":100,\"criticalLow\":90}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-59408-5",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-59408-5",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "59408-5" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Oxygen Saturation by Pulse Oximetry" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Oxygen saturation measured by pulse oximetry" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":50,\"max\":100,\"normalLow\":95,\"normalHigh\":100,\"criticalLow\":90}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-pulse-regularity",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-pulse-regularity",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "pulse-regularity" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Pulse Regularity" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Rhythm regularity of the pulse" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"regular\",\"display\":\"Regular\"},{\"code\":\"irregular\",\"display\":\"Irregular\"},{\"code\":\"regularly-irregular\",\"display\":\"Regularly Irregular\"},{\"code\":\"irregularly-irregular\",\"display\":\"Irregularly Irregular\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-bp-position",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-bp-position",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "bp-position" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "BP Measurement Position" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Patient position during blood pressure measurement" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"sitting\",\"display\":\"Sitting\"},{\"code\":\"standing\",\"display\":\"Standing\"},{\"code\":\"supine\",\"display\":\"Supine (Lying down)\"},{\"code\":\"reclining\",\"display\":\"Reclining\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-bp-arm",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-bp-arm",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "bp-arm" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "BP Measurement Arm" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Arm used for blood pressure measurement" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"left\",\"display\":\"Left Arm\"},{\"code\":\"right\",\"display\":\"Right Arm\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-weight-method",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-weight-method",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "weight-method" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Weight Measurement Method" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Method used to obtain weight measurement" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "choice" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-options", "valueString": "[{\"code\":\"measured\",\"display\":\"Measured (Scale)\"},{\"code\":\"stated\",\"display\":\"Stated by Patient\"},{\"code\":\"estimated\",\"display\":\"Estimated\"}]" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-local-vitals-notes",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "local-vitals-notes",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "vitals-notes" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "https://lattice.one/fhir/CodeSystem/local" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Vitals Notes" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Additional notes or comments about vital signs" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "string" },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "vitals" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" }
+        ]
+      }
+    }
+  ]
+}

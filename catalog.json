@@ -27,6 +27,18 @@
         "tags": ["demographics", "australia", "au", "medicare", "patient"],
         "dependsOn": [],
         "path": "variables/core-demographics-au"
+      },
+      {
+        "id": "core-vitals",
+        "name": "Core Vital Signs",
+        "version": "1.0.0",
+        "category": "vitals",
+        "description": "Standard vital sign measurements with both metric and imperial unit variants for weight, height, and temperature",
+        "author": "Lattice Health Foundation",
+        "variableCount": 18,
+        "tags": ["vitals", "blood-pressure", "heart-rate", "temperature", "weight", "height", "bmi", "spo2"],
+        "dependsOn": [],
+        "path": "variables/core-vitals"
       }
     ],
     "screens": [],
