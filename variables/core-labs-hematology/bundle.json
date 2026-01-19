@@ -1,0 +1,784 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack"]
+  },
+  "identifier": {
+    "system": "https://lattice.one/fhir/variable-pack",
+    "value": "core-labs-hematology-v1.0.0"
+  },
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:variable-loinc-718-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-718-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "718-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Hemoglobin" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Hemoglobin concentration in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "g/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":2,\"max\":25,\"normalLow\":12.0,\"normalHigh\":17.5,\"criticalLow\":7.0,\"criticalHigh\":20.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-4544-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-4544-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "4544-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Hematocrit" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Hematocrit (packed cell volume) in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":10,\"max\":70,\"normalLow\":36,\"normalHigh\":52,\"criticalLow\":20,\"criticalHigh\":60}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-789-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-789-8",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "789-8" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Red Blood Cell Count (RBC)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Erythrocyte count in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "10*6/uL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 2 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":10,\"normalLow\":4.0,\"normalHigh\":6.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-6690-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-6690-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "6690-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "White Blood Cell Count (WBC)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Leukocyte count in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "10*3/uL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":100,\"normalLow\":4.5,\"normalHigh\":11.0,\"criticalLow\":2.0,\"criticalHigh\":30.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-777-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-777-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "777-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Platelet Count" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Thrombocyte count in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "10*3/uL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":10,\"max\":1500,\"normalLow\":150,\"normalHigh\":400,\"criticalLow\":50,\"criticalHigh\":1000}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-787-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-787-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "787-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "MCV (Mean Corpuscular Volume)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Mean corpuscular volume of red blood cells" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low: microcytic, High: macrocytic anemia" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "fL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":50,\"max\":150,\"normalLow\":80,\"normalHigh\":100}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-785-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-785-6",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "785-6" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "MCH (Mean Corpuscular Hemoglobin)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Mean corpuscular hemoglobin" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "pg" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":15,\"max\":45,\"normalLow\":27,\"normalHigh\":33}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-786-4",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-786-4",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "786-4" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "MCHC (Mean Corpuscular Hgb Concentration)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Mean corpuscular hemoglobin concentration" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "g/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":25,\"max\":40,\"normalLow\":32,\"normalHigh\":36}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-788-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-788-0",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "788-0" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "RDW (Red Cell Distribution Width)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Red blood cell distribution width" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Elevated in mixed anemia, iron deficiency" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":10,\"max\":30,\"normalLow\":11.5,\"normalHigh\":14.5}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-30384-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-30384-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "30384-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Reticulocyte Count" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Reticulocyte percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Elevated with hemolysis or response to therapy" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":25,\"normalLow\":0.5,\"normalHigh\":2.5}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-751-8",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-751-8",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "751-8" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Neutrophils %" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Neutrophils percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":100,\"normalLow\":40,\"normalHigh\":70}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-731-0",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-731-0",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "731-0" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Lymphocytes %" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Lymphocytes percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":100,\"normalLow\":20,\"normalHigh\":40}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-742-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-742-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "742-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Monocytes %" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Monocytes percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":30,\"normalLow\":2,\"normalHigh\":8}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-711-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-711-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "711-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Eosinophils %" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Eosinophils percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Elevated in allergies, parasitic infections" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":30,\"normalLow\":1,\"normalHigh\":4}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-704-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-704-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "704-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Basophils %" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Basophils percentage in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":5,\"normalLow\":0,\"normalHigh\":1}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-17849-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-17849-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "17849-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Absolute Neutrophil Count (ANC)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Absolute neutrophil count" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "<1500 neutropenia, <500 severe neutropenia" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "10*3/uL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":50,\"normalLow\":1.5,\"normalHigh\":8.0,\"criticalLow\":0.5}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2500-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2500-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2500-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Serum Iron" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Iron level in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "ug/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":10,\"max\":500,\"normalLow\":60,\"normalHigh\":170}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-14800-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-14800-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "14800-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "TIBC (Total Iron Binding Capacity)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Total iron binding capacity in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Elevated in iron deficiency" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "ug/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":100,\"max\":600,\"normalLow\":250,\"normalHigh\":400}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-2502-3",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-2502-3",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "2502-3" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Transferrin Saturation" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Iron saturation of transferrin" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low in iron deficiency, high in iron overload" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "%" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":100,\"normalLow\":20,\"normalHigh\":50}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-35572-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-35572-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "35572-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Vitamin B12" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Vitamin B12 (cobalamin) level in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low in pernicious anemia, malabsorption" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "pg/mL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":50,\"max\":2000,\"normalLow\":200,\"normalHigh\":900}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-5902-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-5902-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "5902-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "PT (Prothrombin Time)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Prothrombin time in blood" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "s" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":5,\"max\":100,\"normalLow\":11,\"normalHigh\":14,\"criticalHigh\":30}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-5964-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-5964-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "5964-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "INR" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "International Normalized Ratio" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Target 2-3 for most anticoagulation indications" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "{INR}" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":15,\"normalLow\":0.9,\"normalHigh\":1.1,\"criticalHigh\":5.0}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-6301-6",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-6301-6",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "6301-6" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "PTT (Partial Thromboplastin Time)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Activated partial thromboplastin time" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "s" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":15,\"max\":200,\"normalLow\":25,\"normalHigh\":35,\"criticalHigh\":100}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-3173-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-3173-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "3173-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Ferritin" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Ferritin level in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low in iron deficiency, elevated in inflammation/iron overload" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "ng/mL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":1,\"max\":5000,\"normalLow\":20,\"normalHigh\":300}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-30341-2",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-30341-2",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "30341-2" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "ESR (Erythrocyte Sedimentation Rate)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Erythrocyte sedimentation rate" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Non-specific marker of inflammation" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mm/h" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":150,\"normalLow\":0,\"normalHigh\":20}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-1988-5",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-1988-5",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "1988-5" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "CRP (C-Reactive Protein)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "C-reactive protein level in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Acute phase reactant, elevated in infection/inflammation" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/L" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0,\"max\":500,\"normalHigh\":10}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-4537-7",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-4537-7",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "4537-7" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Folate (Serum)" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Folate level in serum" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low in folate deficiency anemia" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "ng/mL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 1 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":0.5,\"max\":50,\"normalLow\":3.0,\"normalHigh\":20}" }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:variable-loinc-71695-1",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "loinc-71695-1",
+        "code": {
+          "coding": [{
+            "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+            "code": "variable-definition",
+            "display": "Variable Definition"
+          }]
+        },
+        "extension": [
+          { "url": "https://lattice.one/fhir/ext/variable-code", "valueString": "71695-1" },
+          { "url": "https://lattice.one/fhir/ext/variable-code-system", "valueString": "http://loinc.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-display", "valueString": "Fibrinogen" },
+          { "url": "https://lattice.one/fhir/ext/variable-description", "valueString": "Fibrinogen level in plasma" },
+          { "url": "https://lattice.one/fhir/ext/variable-help-text", "valueString": "Low in DIC, liver disease; elevated in inflammation" },
+          { "url": "https://lattice.one/fhir/ext/variable-data-type", "valueString": "quantity" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit", "valueString": "mg/dL" },
+          { "url": "https://lattice.one/fhir/ext/variable-unit-system", "valueString": "http://unitsofmeasure.org" },
+          { "url": "https://lattice.one/fhir/ext/variable-precision", "valueInteger": 0 },
+          { "url": "https://lattice.one/fhir/ext/variable-category", "valueString": "labs" },
+          { "url": "https://lattice.one/fhir/ext/variable-fhir-resource-type", "valueString": "Observation" },
+          { "url": "https://lattice.one/fhir/ext/variable-validation", "valueString": "{\"min\":50,\"max\":1000,\"normalLow\":200,\"normalHigh\":400,\"criticalLow\":100}" }
+        ]
+      }
+    }
+  ]
+}

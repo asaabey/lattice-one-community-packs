@@ -51,6 +51,18 @@
         "tags": ["labs", "renal", "kidney", "ckd", "nephrology", "electrolytes", "egfr", "creatinine"],
         "dependsOn": [],
         "path": "variables/core-labs-renal"
+      },
+      {
+        "id": "core-labs-hematology",
+        "name": "Hematology Laboratory Panel",
+        "version": "1.0.0",
+        "category": "labs",
+        "description": "Complete blood count (CBC), iron studies, coagulation panel, and inflammatory markers",
+        "author": "Lattice Health Foundation",
+        "variableCount": 28,
+        "tags": ["labs", "hematology", "cbc", "hemoglobin", "anemia", "coagulation", "iron"],
+        "dependsOn": [],
+        "path": "variables/core-labs-hematology"
       }
     ],
     "screens": [],
