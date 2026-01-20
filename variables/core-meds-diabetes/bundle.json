@@ -1,0 +1,693 @@
+{
+  "resourceType": "Bundle",
+  "id": "core-meds-diabetes-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:atc-A10BA",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BA",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BA"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Metformin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Biguanides - metformin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "First-line for T2DM. Hold if eGFR <30 or acute illness. Contraindicated in lactic acidosis risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BB",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BB",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BB"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Sulfonylurea"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Sulfonylureas - e.g., glipizide, gliclazide, glimepiride, glyburide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Hypoglycemia risk, especially in elderly and CKD. Gliclazide preferred in renal impairment."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BH",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BH",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BH"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "DPP-4 Inhibitor"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Dipeptidyl peptidase-4 inhibitors - e.g., sitagliptin, saxagliptin, linagliptin, alogliptin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Weight-neutral, low hypoglycemia risk. Linagliptin no dose adjustment in CKD."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BJ",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BJ",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BJ"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "GLP-1 Receptor Agonist"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "GLP-1 receptor agonists - e.g., semaglutide, liraglutide, dulaglutide, exenatide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "injectable-non-insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "CV benefit (semaglutide, liraglutide, dulaglutide). Weight loss. GI side effects common initially."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BK",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BK",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BK"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "SGLT2 Inhibitor"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Sodium-glucose co-transporter 2 inhibitors - e.g., empagliflozin, dapagliflozin, canagliflozin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "CV and renal benefits independent of diabetes. First-line add-on with CKD, HF, or ASCVD. DKA risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BG",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BG",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BG"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Thiazolidinedione (TZD)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Thiazolidinediones - pioglitazone, rosiglitazone"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Contraindicated in heart failure. Fluid retention, weight gain, fracture risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BF",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BF",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BF"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Alpha-Glucosidase Inhibitor"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Alpha-glucosidase inhibitors - acarbose, miglitol, voglibose"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Targets postprandial glucose. GI side effects limit use. Take with first bite of meal."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BX",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BX",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BX"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Meglitinide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Meglitinides/glinides - repaglinide, nateglinide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Short-acting insulin secretagogue. Flexible dosing with meals. Hypoglycemia risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10A",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10A",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10A"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Insulin (Any)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Any insulin preparation - includes all types and combinations"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "insulin"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10AB",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10AB",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10AB"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Rapid-Acting Insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Fast-acting insulins - e.g., insulin lispro, aspart, glulisine"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Prandial/bolus insulin. Onset 15 min, duration 3-5 hours. Give with meals."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10AC",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10AC",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10AC"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Intermediate-Acting Insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Intermediate-acting insulins - NPH insulin (isophane)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "NPH duration 12-18 hours. Peak at 4-8 hours - nocturnal hypoglycemia risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10AD",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10AD",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10AD"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Premixed Insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Premixed insulin combinations - e.g., 70/30, 75/25, 50/50 mixes"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Convenient but less flexible dosing. Typically BID with meals."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10AE",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10AE",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10AE"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Long-Acting Insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Long-acting/basal insulins - e.g., glargine, detemir, degludec"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "insulin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Basal insulin for fasting glucose control. Glargine U300 and degludec have longer duration, less hypoglycemia."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-A10BD",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-A10BD",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "A10BD"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Oral Hypoglycemic Combination"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Fixed-dose oral antidiabetic combinations - e.g., metformin/sitagliptin, metformin/empagliflozin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "oral-hypoglycemic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Improves adherence with single pill. Check individual component contraindications."
+          }
+        ]
+      }
+    }
+  ]
+}

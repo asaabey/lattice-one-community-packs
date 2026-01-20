@@ -87,6 +87,30 @@
         "tags": ["labs", "lipid", "cholesterol", "cardiovascular", "ldl", "hdl", "triglycerides"],
         "dependsOn": [],
         "path": "variables/core-labs-lipid"
+      },
+      {
+        "id": "core-meds-cardiovascular",
+        "name": "Cardiovascular Medication Classes",
+        "version": "1.0.0",
+        "category": "medications",
+        "description": "Drug class variables for cardiovascular medications using WHO ATC classification - antihypertensives, lipid-lowering agents, antiplatelets, and anticoagulants",
+        "author": "Lattice Health Foundation",
+        "variableCount": 24,
+        "tags": ["medications", "cardiovascular", "antihypertensive", "statin", "antiplatelet", "anticoagulant", "atc"],
+        "dependsOn": [],
+        "path": "variables/core-meds-cardiovascular"
+      },
+      {
+        "id": "core-meds-diabetes",
+        "name": "Diabetes Medication Classes",
+        "version": "1.0.0",
+        "category": "medications",
+        "description": "Drug class variables for diabetes medications using WHO ATC classification - oral hypoglycemics, GLP-1 agonists, SGLT2 inhibitors, and insulins",
+        "author": "Lattice Health Foundation",
+        "variableCount": 14,
+        "tags": ["medications", "diabetes", "insulin", "metformin", "sglt2", "glp1", "atc"],
+        "dependsOn": [],
+        "path": "variables/core-meds-diabetes"
       }
     ],
     "screens": [

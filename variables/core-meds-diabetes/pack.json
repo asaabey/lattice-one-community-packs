@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/pack-metadata.schema.json",
+  "id": "core-meds-diabetes",
+  "name": "Diabetes Medication Classes",
+  "version": "1.0.0",
+  "description": "Drug class variables for diabetes medications using WHO ATC classification - oral hypoglycemics, GLP-1 agonists, SGLT2 inhibitors, and insulins",
+  "author": "Lattice Health Foundation",
+  "license": "CC-BY-4.0",
+  "category": "medications",
+  "tags": ["medications", "diabetes", "insulin", "metformin", "sglt2", "glp1", "atc"],
+  "latticeMinVersion": "1.0.0",
+  "fhirVersion": "R4",
+  "variableCount": 14,
+  "variables": [
+    "atc-A10BA",
+    "atc-A10BB",
+    "atc-A10BH",
+    "atc-A10BJ",
+    "atc-A10BK",
+    "atc-A10BG",
+    "atc-A10BF",
+    "atc-A10BX",
+    "atc-A10A",
+    "atc-A10AB",
+    "atc-A10AC",
+    "atc-A10AD",
+    "atc-A10AE",
+    "atc-A10BD"
+  ],
+  "dependsOn": []
+}

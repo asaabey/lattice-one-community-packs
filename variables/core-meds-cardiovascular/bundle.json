@@ -1,0 +1,1171 @@
+{
+  "resourceType": "Bundle",
+  "id": "core-meds-cardiovascular-bundle",
+  "meta": {
+    "profile": ["https://lattice.one/fhir/StructureDefinition/variable-pack-bundle"]
+  },
+  "type": "collection",
+  "timestamp": "2024-01-19T00:00:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:atc-C09A",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C09A",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C09A"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "ACE Inhibitor"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Angiotensin-converting enzyme (ACE) inhibitors - e.g., enalapril, lisinopril, ramipril, perindopril"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-raas"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "First-line for hypertension with diabetes, CKD, or heart failure. Monitor potassium and creatinine."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C09C",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C09C",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C09C"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "ARB (Angiotensin Receptor Blocker)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Angiotensin II receptor blockers - e.g., losartan, valsartan, irbesartan, telmisartan, candesartan"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-raas"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Alternative to ACE inhibitors if cough occurs. Do not combine with ACE inhibitors."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C09D",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C09D",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C09D"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "ARB Combination"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "ARB combinations with diuretics or calcium channel blockers - e.g., losartan/HCTZ, valsartan/amlodipine"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-raas"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C07",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C07",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C07"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Beta Blocker"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Beta-adrenergic blocking agents - e.g., metoprolol, bisoprolol, carvedilol, atenolol, propranolol"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-other"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "First-line for heart failure (carvedilol, bisoprolol, metoprolol succinate), post-MI, and arrhythmias."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C08",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C08",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C08"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Calcium Channel Blocker"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Calcium channel blockers - e.g., amlodipine, nifedipine, diltiazem, verapamil"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-other"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Dihydropyridines (amlodipine) for hypertension; non-dihydropyridines (diltiazem, verapamil) for rate control."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C03",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C03",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C03"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Diuretic (Any)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Any diuretic agent - thiazides, loop diuretics, potassium-sparing, or combinations"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "diuretic"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C03C",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C03C",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C03C"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Loop Diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "High-ceiling/loop diuretics - e.g., furosemide, bumetanide, torsemide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Used for volume overload in heart failure and CKD. Monitor electrolytes."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C03D",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C03D",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C03D"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Potassium-Sparing Diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Potassium-sparing diuretics - e.g., spironolactone, eplerenone, amiloride, triamterene"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "MRAs (spironolactone, eplerenone) indicated in HFrEF. Caution with ACEi/ARB - hyperkalemia risk."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C03E",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C03E",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C03E"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Thiazide Diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Thiazide and thiazide-like diuretics - e.g., hydrochlorothiazide, chlorthalidone, indapamide"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "diuretic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "First-line for hypertension. Less effective when eGFR <30. Chlorthalidone preferred over HCTZ."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C02",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C02",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C02"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Other Antihypertensive"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Other antihypertensives - e.g., clonidine, methyldopa, hydralazine, minoxidil"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-other"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C10AA",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C10AA",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C10AA"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Statin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "HMG-CoA reductase inhibitors (statins) - e.g., atorvastatin, rosuvastatin, simvastatin, pravastatin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "lipid-lowering"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "First-line for ASCVD prevention. High-intensity: atorvastatin 40-80mg, rosuvastatin 20-40mg."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C10AB",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C10AB",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C10AB"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Fibrate"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Fibric acid derivatives - e.g., fenofibrate, gemfibrozil, bezafibrate"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "lipid-lowering"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Primarily for hypertriglyceridemia. Fenofibrate preferred if combining with statin."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C10AX09",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C10AX09",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C10AX09"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Ezetimibe"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Cholesterol absorption inhibitor - ezetimibe"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "lipid-lowering"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Add-on to statin for additional LDL lowering (~15-20% reduction)."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C10BX",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C10BX",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C10BX"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "PCSK9 Inhibitor"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "PCSK9 inhibitors - e.g., evolocumab, alirocumab"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "lipid-lowering"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "For very high-risk ASCVD or statin intolerance. Injectable, ~50-60% LDL reduction."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-B01AC",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-B01AC",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "B01AC"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Antiplatelet Agent"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Platelet aggregation inhibitors - e.g., aspirin, clopidogrel, ticagrelor, prasugrel"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antithrombotic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "For secondary ASCVD prevention. DAPT post-ACS/PCI typically 12 months."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-B01AC06",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-B01AC06",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "B01AC06"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Aspirin (Low-dose)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Low-dose aspirin (75-100mg) for cardiovascular prevention"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antithrombotic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Recommended for secondary prevention. Primary prevention benefit now limited to select high-risk patients."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-B01AA",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-B01AA",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "B01AA"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Warfarin (VKA)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Vitamin K antagonists - warfarin, acenocoumarol, phenprocoumon"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "anticoagulant"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Requires INR monitoring. Target INR 2-3 for most indications, 2.5-3.5 for mechanical valves."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-B01AF",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-B01AF",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "B01AF"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "DOAC (Factor Xa Inhibitor)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Direct oral anticoagulants - Factor Xa inhibitors - e.g., rivaroxaban, apixaban, edoxaban"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "anticoagulant"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Preferred over warfarin for non-valvular AF. Dose adjust for renal function."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-B01AE",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-B01AE",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "B01AE"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "DOAC (Direct Thrombin Inhibitor)"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Direct thrombin inhibitors - e.g., dabigatran"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "anticoagulant"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Reversible with idarucizumab. Avoid if CrCl <30 mL/min."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C01D",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C01D",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C01D"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Nitrate"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Vasodilators used in cardiac diseases - nitrates"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antianginal"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C01DA",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C01DA",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C01DA"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "GTN/Nitroglycerin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Organic nitrates - e.g., GTN/nitroglycerin, isosorbide dinitrate, isosorbide mononitrate"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antianginal"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "For angina relief and prevention. Nitrate-free interval needed to prevent tolerance."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C01A",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C01A",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C01A"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Digoxin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Cardiac glycosides - digoxin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "heart-failure"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "For rate control in AF or symptom relief in HFrEF. Monitor levels; toxicity risk with hypokalemia."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C01BD",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C01BD",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C01BD"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Amiodarone"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Class III antiarrhythmics - amiodarone, dronedarone"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antiarrhythmic"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "For AF rhythm control or ventricular arrhythmias. Multiple toxicities - monitor thyroid, liver, lungs."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:atc-C02CA",
+      "resource": {
+        "resourceType": "Basic",
+        "id": "atc-C02CA",
+        "meta": {
+          "profile": ["https://lattice.one/fhir/StructureDefinition/variable-definition"]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://lattice.one/fhir/CodeSystem/resource-types",
+              "code": "variable-definition",
+              "display": "Variable Definition"
+            }
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code",
+            "valueString": "C02CA"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-code-system",
+            "valueString": "http://www.whocc.no/atc"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-display",
+            "valueString": "Alpha Blocker"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-description",
+            "valueString": "Alpha-adrenoreceptor antagonists - e.g., prazosin, doxazosin, terazosin"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-data-type",
+            "valueString": "boolean"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-category",
+            "valueString": "antihypertensive-other"
+          },
+          {
+            "url": "https://lattice.one/fhir/ext/variable-clinical-note",
+            "valueString": "Third-line antihypertensive. Also used for BPH. First-dose hypotension risk."
+          }
+        ]
+      }
+    }
+  ]
+}
